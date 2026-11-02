@@ -1,0 +1,10 @@
+original/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+node_modules/
+demo-output/
+fonts/
+__pycache__/

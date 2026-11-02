@@ -1,0 +1,25 @@
+{
+  "purpose": "presentation-only",
+  "synthetic": true,
+  "date": "2026-11-01",
+  "personal_test_data_used": false,
+  "steps_today": 4862,
+  "active_minutes": 126,
+  "week_steps": [2800, 3600, 3100, 4200, 3900, 4600, 4100],
+  "streak": 7,
+  "normal": {
+    "fall": 0.18,
+    "cognitive_decline": 0.24,
+    "depression": 0.21,
+    "heart_failure": 0.16,
+    "social_isolation": 0.28
+  },
+  "watch": {
+    "fall": 0.58,
+    "cognitive_decline": 0.29,
+    "depression": 0.43,
+    "heart_failure": 0.22,
+    "social_isolation": 0.48
+  },
+  "note": "Pre-filled synthetic history for screenshots. No model has been trained or calibrated on these values."
+}
