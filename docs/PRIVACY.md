@@ -9,7 +9,7 @@ The project owner states that this was a test project and that authorization was
 - Synthetic steps, activity durations, seven-day histories and reference scores.
 - Presentation screenshots and a product cover image.
 - Selected UI source and a screenshot renderer excerpt.
-- Public project credits include the owner-authorized abbreviated names: author D. Sangji and collaborator M. Cen. Existing GitHub account credits are retained: @Hawever-renbo, @Mark751127 and @marcmliu.
+- Public project credits include the owner-authorized abbreviated names: author D. Sangji and collaborator M. Cen. Existing GitHub account credits are retained: @Hawever-renbo and @Mark751127.
 
 ## Excluded
 

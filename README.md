@@ -53,7 +53,7 @@ The [online demo](https://hawever-renbo.github.io/dongle-me/) shows the care int
 
 **Author: D. Sangji** · **Collaborator: M. Cen**
 
-Repository owner: [@Hawever-renbo](https://github.com/Hawever-renbo). Project collaborators: [@Mark751127](https://github.com/Mark751127) and [@marcmliu](https://github.com/marcmliu).
+Repository owner: [@Hawever-renbo](https://github.com/Hawever-renbo). Project collaborator account: [@Mark751127](https://github.com/Mark751127).
 
 Authorship and collaborator credits use the abbreviated names supplied by the project owner. GitHub account credits do not imply that repository invitations have been issued or accepted.
 
