@@ -2,7 +2,7 @@
 
 **A little check-in. A lot of peace of mind.** A care prototype for older adults who live alone and the people who care about them: one-tap reassurance for older adults, and a separate view of recent changes for families.
 
-[**Try the browser demo →**](https://hawever-renbo.github.io/dongle-me-work-sample/) · [Six-screen gallery](https://hawever-renbo.github.io/dongle-me-work-sample/assets/index.html) · [Implementation status](docs/STATUS.md)
+[**Try the browser demo →**](https://hawever-renbo.github.io/dongle-me/) · [Six-screen gallery](https://hawever-renbo.github.io/dongle-me/assets/index.html) · [Implementation status](docs/STATUS.md)
 
 ![Dongle.me overview: older adult and family interfaces](assets/cover.png)
 
@@ -27,7 +27,7 @@ The intention is to support connection while keeping everyday interaction simple
 
 ## What the online demo demonstrates
 
-The [online demo](https://hawever-renbo.github.io/dongle-me-work-sample/) shows the care interaction through synthetic screenshots. It does not run a health prediction model. Native English localization and bilingual switching remain future-release concepts. See [implementation status](docs/STATUS.md).
+The [online demo](https://hawever-renbo.github.io/dongle-me/) shows the care interaction through synthetic screenshots. It does not run a health prediction model. Native English localization and bilingual switching remain future-release concepts. See [implementation status](docs/STATUS.md).
 
 ## People
 
