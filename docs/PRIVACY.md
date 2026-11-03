@@ -25,4 +25,4 @@ The Flutter excerpts are source for review, not executable website code. One wid
 
 ## Interpretation
 
-Displayed numbers are uncalibrated research estimates. They are not clinical diagnoses or calibrated probabilities. The public data is synthetic and does not support claims of clinical efficacy. IB theory by itself does not guarantee privacy.
+Displayed numbers are uncalibrated research estimates. They are not clinical diagnoses or calibrated probabilities. The public data is synthetic and does not support claims of clinical efficacy.

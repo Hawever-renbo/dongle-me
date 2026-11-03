@@ -11,9 +11,7 @@
 | Screenshot renderer | Requires private app types, theme, dependencies and local fonts; not reproducible from this repo alone |
 | Native English localization / language switching | Future-release concept according to original package documentation |
 | Full Android APK / production backend | Not included |
-| Earlier single-T approach | Owner reports X → T → Y as the working approach for an extended period |
-| Recent multi-T research | Owner reports trying 1–2 additional T stages: X → T₁ → T₂ → Y, X → T₁ → T₂ → T₃ → Y, or more; exploration in progress |
-| Full IB implementation / training / evaluation | Not included; the browser demo does not execute or compare T architectures |
+| IB theory materials | The original bundle contains an IB-v4 reference in a UI comment, but no standalone theory document or complete model implementation. No expanded theory interpretation is published here. |
 | Social purpose | Care for older adults living alone; improved care outcomes have not been established by this bundle |
 | Clinical calibration or predictive performance | Not established by this bundle |
 

@@ -1,10 +1,8 @@
 # Dongle.me
 
-**Information bottleneck theory, applied to caring for older adults who live alone.**
+**A little check-in. A lot of peace of mind.** A care prototype for older adults who live alone and the people who care about them: one-tap reassurance for older adults, and a separate view of recent changes for families.
 
-The theoretical focus is learning useful intermediate representations: **X → T → Y**, with recent exploration of **X → T₁ → T₂ → Y** and longer chains. The social purpose is to help families stay connected with older adults living alone through a simple check-in and a separate view of recent changes.
-
-[**Try the browser demo →**](https://hawever-renbo.github.io/dongle-me-work-sample/) · [Six-screen gallery](https://hawever-renbo.github.io/dongle-me-work-sample/assets/index.html) · [Theory & evidence](docs/INFORMATION_BOTTLENECK.md)
+[**Try the browser demo →**](https://hawever-renbo.github.io/dongle-me-work-sample/) · [Six-screen gallery](https://hawever-renbo.github.io/dongle-me-work-sample/assets/index.html) · [Implementation status](docs/STATUS.md)
 
 ![Dongle.me overview: older adult and family interfaces](assets/cover.png)
 
@@ -18,24 +16,6 @@ The theoretical focus is learning useful intermediate representations: **X → T
 
 The browser demo is a screenshot-based interactive walkthrough built around the supplied Flutter screens. The check-in does not deliver a notification. It uses fixed synthetic fixtures and does not run a health prediction model. English localization and bilingual switching are concepts for a future Android release, not features claimed for the current APK.
 
-## Theoretical highlight: from one T to multiple T stages
-
-The project’s information bottleneck notation is **X → T → Y**: inputs X are represented through T while retaining information relevant to target Y. In the standard IB formulation, the trade-off is expressed as `min I(X; T) − β I(T; Y)`.
-
-As clarified by the project owner on 2026-11-03:
-
-| Research stage | Representation chain | Status |
-| --- | --- | --- |
-| Earlier work | **X → T → Y** | A single T was the working approach for an extended period |
-| Recent exploration | **X → T₁ → T₂ → Y** | Trying at least one additional intermediate representation |
-| Further exploration | **X → T₁ → T₂ → T₃ → Y**, or more | Trying 1–2 additional T stages, with longer chains possible |
-
-This research asks what each intermediate representation should retain for the next stage and the eventual task. Adding stages introduces further opportunities for abstraction and information loss; improvement must be evaluated rather than assumed. These chains describe the owner-reported research direction. The supplied bundle does not define each T stage or provide comparative experiment results.
-
-**The five care targets are outputs Y, not five T layers.** Likewise, the older-adult and family screens are two interfaces, not evidence of two bottleneck stages. The UI source references an **IB-v4** design and five independent target cards, with seven-day trends and confidence handling. The full representation-learning implementation is outside this public bundle.
-
-Read the [theory and application note](docs/INFORMATION_BOTTLENECK.md), the [original IB paper](https://arxiv.org/abs/physics/0004057), and [IB research on layered representations](https://arxiv.org/abs/1503.02406).
-
 ## Social responsibility: care for older adults living alone
 
 The application addresses a practical care problem: older adults who live alone and the people who care about them need a manageable way to stay connected. Dongle.me brings that purpose into two experiences:
@@ -47,7 +27,7 @@ The intention is to support connection while keeping everyday interaction simple
 
 ## What the online demo demonstrates
 
-The [online demo](https://hawever-renbo.github.io/dongle-me-work-sample/) shows the care interaction through synthetic screenshots. It does not execute the single-T or multi-T model, train representations, or compare their performance. Native English localization and bilingual switching remain future-release concepts. See [implementation status](docs/STATUS.md).
+The [online demo](https://hawever-renbo.github.io/dongle-me-work-sample/) shows the care interaction through synthetic screenshots. It does not run a health prediction model. Native English localization and bilingual switching remain future-release concepts. See [implementation status](docs/STATUS.md).
 
 ## People
 
@@ -59,7 +39,7 @@ The collaborators are credited by GitHub account as requested by the project own
 
 For this test project, the project owner confirms that **authorization was obtained from everyone involved**. This is an owner-provided statement, not a claim of independent consent verification or formal ethics approval.
 
-All displayed steps, activity durations, histories and scores are synthetic. No personal test records or consent documents are published. The page has no analytics, login, forms, backend requests or external scripts/fonts; its assets are hosted with the site. The hosting provider may keep normal access logs. Information bottleneck compression alone is not a privacy guarantee. See [privacy and publication scope](docs/PRIVACY.md).
+All displayed steps, activity durations, histories and scores are synthetic. No personal test records or consent documents are published. The page has no analytics, login, forms, backend requests or external scripts/fonts; its assets are hosted with the site. The hosting provider may keep normal access logs. See [privacy and publication scope](docs/PRIVACY.md).
 
 The five scores are research estimates, not diagnoses or calibrated disease probabilities. No clinical performance claim is made.
 
