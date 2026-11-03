@@ -16,6 +16,8 @@ Publication changes:
 
 This repo is a curated project showcase, not a complete export of the Android application. Public visibility does not establish individual contribution percentages or grant a software license.
 
-## Publication scope update — 2026-11-03
+## Theory explanation and evidence
 
-The project owner requested that theory be published only if it exists in the earliest supplied bundle. That bundle contains an IB-v4 reference in a UI comment, but no standalone theory document or complete model implementation. The added theory interpretation and single-/multi-T diagrams have therefore been removed from the current publication. The original UI excerpts are retained unchanged. Care for older adults living alone remains the stated social purpose.
+The project owner confirms that information bottleneck is the theoretical highlight and care for older adults living alone is the social purpose. Earlier work used X → T → Y for an extended period; recent exploration adds 1–2 T stages, with X → T₁ → T₂ → Y or longer chains.
+
+The theory note explains that confirmed research direction alongside the IB-v4 reference and independent Y targets in the original UI excerpts. It does not reproduce an absent private theory document or attribute unverified functions and results to individual T stages. Original screenshots and source excerpts remain unchanged.

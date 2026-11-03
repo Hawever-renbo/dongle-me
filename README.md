@@ -1,8 +1,10 @@
 # Dongle.me
 
+**Information bottleneck is the theoretical highlight; care for older adults living alone is the social purpose.**
+
 **A little check-in. A lot of peace of mind.** A care prototype for older adults who live alone and the people who care about them: one-tap reassurance for older adults, and a separate view of recent changes for families.
 
-[**Try the browser demo →**](https://hawever-renbo.github.io/dongle-me/) · [Six-screen gallery](https://hawever-renbo.github.io/dongle-me/assets/index.html) · [Implementation status](docs/STATUS.md)
+[**Try the browser demo →**](https://hawever-renbo.github.io/dongle-me/) · [Six-screen gallery](https://hawever-renbo.github.io/dongle-me/assets/index.html) · [Theory & application](docs/INFORMATION_BOTTLENECK.md) · [Implementation status](docs/STATUS.md)
 
 ![Dongle.me overview: older adult and family interfaces](assets/cover.png)
 
@@ -15,6 +17,24 @@
 5. Open the [Flutter UI excerpts](source/) and [implementation status](docs/STATUS.md) for technical context.
 
 The browser demo is a screenshot-based interactive walkthrough built around the supplied Flutter screens. The check-in does not deliver a notification. It uses fixed synthetic fixtures and does not run a health prediction model. English localization and bilingual switching are concepts for a future Android release, not features claimed for the current APK.
+
+## Theoretical highlight: from one T to multiple T stages
+
+The project’s information bottleneck notation is **X → T → Y**: inputs X are represented through T while retaining information relevant to target Y. In the standard IB formulation, the trade-off is expressed as `min I(X; T) − β I(T; Y)`.
+
+As clarified by the project owner on 2026-11-03:
+
+| Research stage | Representation chain | Status |
+| --- | --- | --- |
+| Earlier work | **X → T → Y** | A single T was the working approach for an extended period |
+| Recent exploration | **X → T₁ → T₂ → Y** | Trying at least one additional intermediate representation |
+| Further exploration | **X → T₁ → T₂ → T₃ → Y**, or more | Trying 1–2 additional T stages, with longer chains possible |
+
+This research asks what each intermediate representation should retain for the next stage and the eventual task. Adding stages introduces further opportunities for abstraction and information loss; improvement must be evaluated rather than assumed. These chains describe the owner-reported research direction. The supplied bundle does not define each T stage or provide comparative experiment results.
+
+**The five care targets are outputs Y, not five T layers.** Likewise, the older-adult and family screens are two interfaces, not evidence of two bottleneck stages. The UI source references an **IB-v4** design and five independent target cards, with seven-day trends and confidence handling. The full representation-learning implementation is outside this public bundle.
+
+Read the [theory and application note](docs/INFORMATION_BOTTLENECK.md), the [original IB paper](https://arxiv.org/abs/physics/0004057), and [IB research on layered representations](https://arxiv.org/abs/1503.02406).
 
 ## Social responsibility: care for older adults living alone
 

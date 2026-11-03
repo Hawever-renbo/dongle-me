@@ -11,7 +11,9 @@
 | Screenshot renderer | Requires private app types, theme, dependencies and local fonts; not reproducible from this repo alone |
 | Native English localization / language switching | Future-release concept according to original package documentation |
 | Full Android APK / production backend | Not included |
-| IB theory materials | The original bundle contains an IB-v4 reference in a UI comment, but no standalone theory document or complete model implementation. No expanded theory interpretation is published here. |
+| IB research framing | X → T → Y is the earlier approach; recent exploration adds 1–2 T stages, as confirmed by the project owner |
+| Theory and application explanation | See `INFORMATION_BOTTLENECK.md`; distinguishes theoretical interpretation, source evidence and research progress |
+| Full IB implementation and comparative experiments | Not included in the supplied bundle; the browser demo does not execute or compare these models |
 | Social purpose | Care for older adults living alone; improved care outcomes have not been established by this bundle |
 | Clinical calibration or predictive performance | Not established by this bundle |
 
