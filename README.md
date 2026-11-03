@@ -1,6 +1,8 @@
 # Dongle.me
 
-**A little check-in. A lot of peace of mind.** A two-role care prototype grounded in information bottleneck theory: a simple check-in for older adults, and recent trends for their families.
+**Information bottleneck theory, applied to caring for older adults who live alone.**
+
+The theoretical focus is learning useful intermediate representations: **X → T → Y**, with recent exploration of **X → T₁ → T₂ → Y** and longer chains. The social purpose is to help families stay connected with older adults living alone through a simple check-in and a separate view of recent changes.
 
 [**Try the browser demo →**](https://hawever-renbo.github.io/dongle-me-work-sample/) · [Six-screen gallery](https://hawever-renbo.github.io/dongle-me-work-sample/assets/index.html) · [Theory & evidence](docs/INFORMATION_BOTTLENECK.md)
 
@@ -16,13 +18,36 @@
 
 The browser demo is a screenshot-based interactive walkthrough built around the supplied Flutter screens. The check-in does not deliver a notification. It uses fixed synthetic fixtures and does not run a health prediction model. English localization and bilingual switching are concepts for a future Android release, not features claimed for the current APK.
 
-## Why information bottleneck theory matters
+## Theoretical highlight: from one T to multiple T stages
 
-Information bottleneck theory formalizes a trade-off: compress input **X** into a representation **Z** while retaining information relevant to a target **Y**. This project uses that framing to focus on task-relevant care signals and separate the information shown to each role. The supplied UI source explicitly references an **IB-v4** design and **five independent targets**; it does not collapse them into one overall score.
+The project’s information bottleneck notation is **X → T → Y**: inputs X are represented through T while retaining information relevant to target Y. In the standard IB formulation, the trade-off is expressed as `min I(X; T) − β I(T; Y)`.
 
-The family view shows separate estimates for falls, cognitive decline, depressive tendency, heart failure signs and social isolation, with seven-day trends and confidence handling. The older adult view emphasizes large type, steps and one-tap reassurance.
+As clarified by the project owner on 2026-11-03:
 
-The public bundle demonstrates the interface and its design contracts. It does **not** include the full IB model, training pipeline, calibration dataset or predictive evaluation. See [the technical note](docs/INFORMATION_BOTTLENECK.md) for the distinction between source evidence and theory framing, and the [original paper](https://arxiv.org/abs/physics/0004057).
+| Research stage | Representation chain | Status |
+| --- | --- | --- |
+| Earlier work | **X → T → Y** | A single T was the working approach for an extended period |
+| Recent exploration | **X → T₁ → T₂ → Y** | Trying at least one additional intermediate representation |
+| Further exploration | **X → T₁ → T₂ → T₃ → Y**, or more | Trying 1–2 additional T stages, with longer chains possible |
+
+This research asks what each intermediate representation should retain for the next stage and the eventual task. Adding stages introduces further opportunities for abstraction and information loss; improvement must be evaluated rather than assumed. These chains describe the owner-reported research direction. The supplied bundle does not define each T stage or provide comparative experiment results.
+
+**The five care targets are outputs Y, not five T layers.** Likewise, the older-adult and family screens are two interfaces, not evidence of two bottleneck stages. The UI source references an **IB-v4** design and five independent target cards, with seven-day trends and confidence handling. The full representation-learning implementation is outside this public bundle.
+
+Read the [theory and application note](docs/INFORMATION_BOTTLENECK.md), the [original IB paper](https://arxiv.org/abs/physics/0004057), and [IB research on layered representations](https://arxiv.org/abs/1503.02406).
+
+## Social responsibility: care for older adults living alone
+
+The application addresses a practical care problem: older adults who live alone and the people who care about them need a manageable way to stay connected. Dongle.me brings that purpose into two experiences:
+
+- **Older adults:** large type, a friendly activity display and one-tap reassurance.
+- **Families:** recent activity, five separate research estimates, seven-day trends and confidence indicators that can prompt a conversation.
+
+The intention is to support connection while keeping everyday interaction simple and respecting older adults’ dignity and privacy. This is the project’s social responsibility and motivation; the demo does not establish reduced isolation, fewer falls or other measured care outcomes.
+
+## What the online demo demonstrates
+
+The [online demo](https://hawever-renbo.github.io/dongle-me-work-sample/) shows the care interaction through synthetic screenshots. It does not execute the single-T or multi-T model, train representations, or compare their performance. Native English localization and bilingual switching remain future-release concepts. See [implementation status](docs/STATUS.md).
 
 ## People
 

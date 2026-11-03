@@ -15,3 +15,7 @@ Publication changes:
 - Did not publish the original PowerPoint or original manifest.
 
 This repo is a curated project showcase, not a complete export of the Android application. Public visibility does not establish individual contribution percentages or grant a software license.
+
+## Theory clarification — 2026-11-03
+
+The project owner clarified that information bottleneck theory is the theoretical highlight and care for older adults living alone is the social responsibility. The owner reports an extended period using X → T → Y, followed by recent attempts to add 1–2 T stages, with chains such as X → T₁ → T₂ → Y or longer. The public explanation now uses T throughout and distinguishes representations, output targets and interface roles. Layer definitions and experimental results have not been inferred from screenshots.

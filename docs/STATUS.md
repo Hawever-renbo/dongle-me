@@ -11,7 +11,10 @@
 | Screenshot renderer | Requires private app types, theme, dependencies and local fonts; not reproducible from this repo alone |
 | Native English localization / language switching | Future-release concept according to original package documentation |
 | Full Android APK / production backend | Not included |
-| Full IB implementation / training / evaluation | Not included |
+| Earlier single-T approach | Owner reports X → T → Y as the working approach for an extended period |
+| Recent multi-T research | Owner reports trying 1–2 additional T stages: X → T₁ → T₂ → Y, X → T₁ → T₂ → T₃ → Y, or more; exploration in progress |
+| Full IB implementation / training / evaluation | Not included; the browser demo does not execute or compare T architectures |
+| Social purpose | Care for older adults living alone; improved care outcomes have not been established by this bundle |
 | Clinical calibration or predictive performance | Not established by this bundle |
 
 The original package reported successful Flutter screenshot tests and bilingual browser checks. These are historical package statements, not tests rerun during this publication. Publication validation focuses on the public browser experience and selected release files.
