@@ -58,7 +58,26 @@ This gives the theoretical work a concrete social application. Simplicity, digni
 
 The referenced IB-v4 document, full scoring implementation and recent multi-T experiment artifacts are absent from the supplied package. The source comments support design intent; they do not prove an executed optimization, information retention or clinical validity.
 
-## 6. What the online demo shows
+## 6. Reading the application beyond the diagrams
+
+The source gives a more specific picture of the application than “compress data, then show a score.” The following distinguishes executable interface behavior from comments about the missing scoring model.
+
+| Project observation | Source evidence | Interpretation |
+| --- | --- | --- |
+| Five separate target estimates | `risk_score_cards_en.dart`: `IB-v4 §14.5 Pareto`, `_yOrder` | The presentation preserves distinctions among care targets instead of replacing them with one overall score. Whether the model uses a shared T or target-specific representations is not specified. |
+| Scoring happens outside the widget | `/caregiver/risk_score/:familyId`; source comments describe sigmoid-mapped logits from a literature OR/HR model using a seven-day rolling baseline | The displayed values are estimates about Y, not observed ground-truth Y. A sigmoid score alone does not establish IB optimization or calibrated probabilities. The missing backend must be read to locate T. |
+| Reliability can suppress the estimate | `_isNull`, `confidenceLow`, `dataStatus`, `_nullMessage` | The interface distinguishes insufficient observations from a behavioral conclusion. Thin data or a new baseline should not automatically become an alarming care signal. This is an application reliability policy, not proof of an IB objective. |
+| Changes have a time structure | `risk_history`, `_extractSparkline`; the §14.6 comment distinguishes day-to-day change and seven-day drift | The source’s intent includes both short-term changes and sustained drift. The excerpt renders history; it does not implement the temporal representation or calculate those changes. |
+| Family feedback is recorded separately | `_submitFeedback`, `elder_ok` / `elder_concern`, alert timestamp | The interface provides a contextual feedback channel. The bundle does not show feedback being used as training labels, and a family verdict is not automatically a clinical target label. |
+| Reassurance and risk interpretation have different audiences | `elder_status_en.dart` uses steps only and excludes risk-score language | The product separates simple reassurance from family interpretation. This is a deliberate human-facing policy; it should not be relabeled as two T stages. |
+
+A useful IB reading of this application is **target-dependent relevance**: which information about everyday activity must remain available to inform each care target? The five-Y presentation makes that question concrete. The `Pareto` reference suggests attention to multiple targets, but the excerpt does not disclose a multi-objective loss or a Pareto optimization procedure.
+
+For the recent **additional-T exploration**, a useful analysis must follow actual representations and their connections. In a strictly serial encoder with no new inputs or skip connections, a later stage cannot recover target information already discarded by an earlier stage. Added stages must therefore be assessed for what they retain and what they lose, rather than counted as an improvement by themselves. This is a theoretical criterion for examining the project, not a measured project result. See the discussion of Markov cascades and data processing in [Tishby and Zaslavsky](https://arxiv.org/html/1503.02406v1).
+
+The shorthand X → T → Y names the task pipeline. More precisely, Y is the target variable and the application displays estimates of it; neither a numeric risk estimate nor the check-in message should automatically be identified with T. The complete IB-v4 document and score-generation code are needed to determine the project’s exact T, its representations across stages and how relevance is operationalized.
+
+## 7. What the online demo shows
 
 The [online demo](https://hawever-renbo.github.io/dongle-me/) demonstrates the care interaction with synthetic screenshots: two roles, a check-in confirmation, stable and changed-trend scenarios, and an English/Chinese presentation concept. It does not execute the single-T or multi-T model, learn representations, or compare architectures.
 
