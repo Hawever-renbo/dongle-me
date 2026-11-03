@@ -49,11 +49,13 @@ The intention is to support connection while keeping everyday interaction simple
 
 The [online demo](https://hawever-renbo.github.io/dongle-me/) shows the care interaction through synthetic screenshots. It does not run a health prediction model. Native English localization and bilingual switching remain future-release concepts. See [implementation status](docs/STATUS.md).
 
-## People
+## Author and collaborators
+
+**Author: D. Sangji** · **Collaborator: M. Cen**
 
 Repository owner: [@Hawever-renbo](https://github.com/Hawever-renbo). Project collaborators: [@Mark751127](https://github.com/Mark751127) and [@marcmliu](https://github.com/marcmliu).
 
-The collaborators are credited by GitHub account as requested by the project owner. Individual responsibilities are not specified in the supplied bundle; this page does not claim sole authorship or assign unverified roles. Credits do not imply that GitHub account invitations have been issued or accepted.
+Authorship and collaborator credits use the abbreviated names supplied by the project owner. GitHub account credits do not imply that repository invitations have been issued or accepted.
 
 ## Privacy and authorization
 
